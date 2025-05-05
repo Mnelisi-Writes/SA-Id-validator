@@ -23,6 +23,7 @@ public class ValidateSaIdTest {
     public void testNonNumeric() {
         assertFalse(ValidateSaId.isIdNumberValid("92022A4720082")); // Contains letter
         assertFalse(ValidateSaId.isIdNumberValid("92022B4720082")); // Contains letter
+        assertFalse(ValidateSaId.isIdNumberValid("92022B47Z0082"));
     }
 
     @Test
